@@ -5,11 +5,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.afc.R;
-import com.afc.View.ViewUtil;
-import com.afc.View.ViewUtil.Bind;
 
-//import butterknife.Bind;
-//import butterknife.ButterKnife;
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 /**
  * Created by Administrator on 2016/5/5.
@@ -27,14 +25,7 @@ public class TitleHolder {
     TextView mRightText;
 
     public TitleHolder(View view) {
-//      ButterKnife.bind(this, view);
-        ViewUtil.bind(this, view);
-        android.util.Log.v("tt","mTitleText: "+mTitleText);
-        android.util.Log.v("tt","mRightImage: "+mLeftImage);
-        android.util.Log.v("tt","mLeftText: "+mLeftText);
-        android.util.Log.v("tt","mRightImage: "+mRightImage);
-        View v=view.findViewById(R.id.title_text);
-        android.util.Log.v("tt","view: "+v);
+        ButterKnife.bind(this, view);
     }
 
     public void defineTitle(String title) {

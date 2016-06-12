@@ -7,7 +7,12 @@ import java.lang.reflect.Proxy;
 
 import android.app.Activity;
 import android.view.View;
-
+/**
+ * 用法和ButterKnife一样
+ * 
+ * @author houen.bao
+ *
+ */
 public class ButterKnife {
 
 	private final static String TAG = "ButterKnife";
