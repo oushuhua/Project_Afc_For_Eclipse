@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_line">
+
+    <com.idroid.widget.IScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="48dp" >
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/mall_divider"
+            android:orientation="vertical">
+        </LinearLayout>
+        <!--Frgm分割属性android:showDividers="middle"-->
+    </com.idroid.widget.IScrollView>
+    <include android:id="@+id/top_titlebar" layout="@layout/titlebar" />
+
+</FrameLayout>

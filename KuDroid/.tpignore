@@ -1,0 +1,5 @@
+\Q/bin/\E.*
+\Q/build/\E.*
+\Q/KuDroid.iml\E
+\Q/.apt_generated/\E.*
+\Q/.settings/\E.*

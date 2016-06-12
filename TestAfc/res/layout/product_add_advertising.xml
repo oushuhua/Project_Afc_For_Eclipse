@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/advertisingFramg"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:background="#ffffff">
+
+    <com.afc.Utils.ViewFlowUitil.ViewFlow
+        android:id="@+id/viewflow"
+        android:layout_width="match_parent"
+        android:layout_height="110dp" />
+
+    <LinearLayout
+        android:id="@+id/indicatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:padding="3dip"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 背景用色 -->
+    <color name="color_main">#1a9cf2</color>
+    <color name="color_line">#F0F0F0</color>
+
+    <!-- 文字用色 -->
+    <color name="color_text_focus">#FF6C00</color>
+    <color name="color_text_default">#666666</color>
+    <color name="color_text_main">#333333</color>
+    <color name="color_text_prompt_gray">#999999</color>
+    <color name="color_text_prompt_bright">#3366cc</color>
+
+    <color name="textcolor_focus">#FF6C00</color>
+    <color name="textcolor_default">#666666</color>
+    <color name="textcolor_main">#333333</color>
+    <color name="textcolor_blue">#2c83e5</color>
+    <color name="textcolor_prompt_gray">#999999</color>
+    <color name="afc_ffffff">#ffffff</color>
+    <color name="afc_f5f5f5">#F5F5F5</color>
+    <color name="afc_background">#FFF</color>
+
+    <!-- 点击用色 -->
+    <color name="color_btn_default">#999999</color>
+
+    <!-- 文字大小 -->
+    <dimen name="textsize_58px">29dp</dimen>
+    <dimen name="textsize_36px">18dp</dimen>
+    <dimen name="textsize_32px">16dp</dimen>
+    <dimen name="textsize_30px">15dp</dimen>
+    <dimen name="textsize_28px">14dp</dimen>
+    <dimen name="textsize_26px">13dp</dimen>
+    <dimen name="textsize_24px">12dp</dimen>
+    <dimen name="textsize_22px">11dp</dimen>
+    <dimen name="textsize_20px">10dp</dimen>
+    <dimen name="textsize_16px">8dp</dimen>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_line">
+
+    <include android:id="@+id/top_titlebar" layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:id="@+id/investment_apply_lin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/top_titlebar"
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="投资金额"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/textsize_30px"/>
+
+        <EditText
+            android:id="@+id/invsetment_apply_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:hint="0.00"
+            android:gravity="right|center"
+            android:textColorHint="@color/color_main"
+            android:textColor="@color/color_main"
+            android:textSize="@dimen/textsize_30px"
+            android:maxLength="11"
+            android:numeric="integer"
+            android:background="@drawable/sl_nor_info_whith"/>
+    </LinearLayout>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         android:layout_below="@+id/investment_apply_lin"
+         android:text="请填写预计投入资金，后台管理员得到申请后，会在24小时内与您取得联系，并和您沟通投资意向。"
+         android:textColor="#858585"
+         android:textSize="@dimen/textsize_24px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="#fff">
+        <Button
+            android:id="@+id/invsetment_apply_button"
+            style="@style/bg_text_style_16sp_bai_new"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sl_bt_nor_infor"
+            android:text="提交" />
+    </RelativeLayout>
+
+</RelativeLayout>

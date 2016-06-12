@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_line">
+
+    <include android:id="@+id/top_titlebar" layout="@layout/titlebar" />
+
+
+    <com.idroid.widget.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_titlebar"
+        android:layout_marginTop="35dp"
+        android:src="@mipmap/foin_image_log"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/info_logo_images" />
+    <TextView
+        android:id="@+id/info_add_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/aci_inforation"
+        android:text="添加头像"
+        android:layout_alignBottom="@+id/info_logo_images"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:hint="来个个性昵称"
+        android:textSize="@dimen/textsize_30px"
+        android:padding="10dp"
+        android:textColor="#858585"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/sl_nor_info_whith"
+        android:id="@+id/name_EditText"
+        android:layout_below="@+id/info_logo_images"
+        android:layout_marginTop="25dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:hint="推荐人手机号"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/textsize_30px"
+        android:layout_below="@+id/name_EditText"
+        android:padding="10dp"
+        android:textColor="#858585"
+        android:background="@drawable/sl_nor_info_whith"
+        android:id="@+id/phone_EditText" />
+
+
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/bg_text_style_16sp_bai_new"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/sl_bt_nor_infor"
+        android:text="提交"
+        android:layout_alignTop="@+id/phone_EditText"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

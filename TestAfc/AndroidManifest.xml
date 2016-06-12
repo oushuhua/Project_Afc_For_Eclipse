@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.afc">
+
+
+    <!-- 通用权限：网络、读写、相机、电话短信、GPS -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <!-- 一些系统要求的权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.kuparts.service.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+
+    <!-- 三星应用市场所需权限 -->
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <!-- 您从百度网站获取的APP KEY -->
+    <meta-data
+        android:name="BaiduMobAd_STAT_ID"
+        android:value="fd963dd76a"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--注册页-->
+        <activity
+            android:name="com.afc.registered.activity.RegisteredActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+
+        </activity>
+        <!--登录页面-->
+        <activity
+            android:name="com.afc.registered.activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+        </activity>
+        <!--修改密码-->
+        <activity
+            android:name="com.afc.registered.activity.ChangePasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+        </activity>
+        <!--找回密码-->
+        <activity
+            android:name="com.afc.registered.activity.BackPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+        </activity>
+        <!--设置密码 填写验证-->
+        <activity
+            android:name="com.afc.registered.activity.SetUpPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+        </activity>
+        <!--填写基本信息-->
+        <activity
+            android:name="com.afc.registered.activity.InformationActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+        </activity>
+        <!--产品首页-->
+        <activity
+            android:name="com.afc.product.activity.ProductDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+        </activity>
+        <!--投资申请-->
+        <activity
+            android:name="com.afc.product.activity.InvestmentApplyActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="com.afc.Utils.myphotos.GalleryActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.afc.Utils.myphotos.PhotoSelectActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+        </activity>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_backgrund">
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/login_finsh"/>
+
+
+
+        <EditText
+            android:id="@+id/login_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:hint="请输入您的手机号码"
+            android:drawableLeft="@mipmap/login_frist_img"
+            android:textColor="#333333"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/textsize_30px"
+            android:maxLength="11"
+            android:background="@drawable/sl_nor_info_whith"/>
+
+    <EditText
+        android:id="@+id/login_password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:hint="请输入密码"
+        android:textColor="#333333"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@mipmap/login_next_img"
+        android:drawableRight="@mipmap/login_right_img"
+        android:textSize="@dimen/textsize_30px"
+        android:maxLength="11"
+        android:background="@drawable/sl_nor_info_whith"
+        android:layout_below="@+id/login_edittext"/>
+
+
+    <Button
+        android:id="@+id/login_Button"
+        style="@style/bg_text_style_16sp_bai_new"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/sl_bt_nor_infor"
+        android:text="登录"
+        android:layout_below="@+id/login_password_edittext"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/register_next"
+        style="@style/bg_text_style_16sp_bai_new"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/sl_bt_nor_infor"
+        android:text="免费注册"
+        android:layout_below="@+id/login_Button"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码？ 登录需要帮助"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:textSize="@dimen/textsize_28px"
+        android:layout_below="@+id/register_next"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
