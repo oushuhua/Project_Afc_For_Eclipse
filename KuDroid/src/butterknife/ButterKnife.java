@@ -10,6 +10,14 @@ import android.view.View;
 
 public class ButterKnife {
 
+	private final static String TAG = "ButterKnife";
+
+	private static boolean DEBUG = false;
+
+	public static void setDebug(boolean isDebug) {
+		DEBUG = isDebug;
+	}
+
 	public static void bind(Object obj) {
 		bind(obj, null);
 	}
@@ -51,14 +59,18 @@ public class ButterKnife {
 			if ((methods != null) && (methods.length > 0)) {
 				for (int i = 0; i < methods.length; i++) {
 					method = methods[i];
-					doBind(obj,rootView,method);
-					doOnClick(obj,rootView,method);
+					doBind(obj, rootView, method);
+					doOnClick(obj, rootView, method);
 				}
 			}
 
 		} catch (Exception e) {
 			e.printStackTrace();
-			android.util.Log.v("tt", "ViewUtil has exception " + e);
+			if (DEBUG) {
+				android.util.Log.w(TAG, "ButterKnife bind has exception " + e);
+				android.util.Log.w(TAG, "ButterKnife bind field: " + field);
+				android.util.Log.w(TAG, "ButterKnife bind method: " + method);
+			}
 		}
 	}
 
@@ -105,7 +117,9 @@ public class ButterKnife {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			android.util.Log.v("tt", "ButterKnife doBind has exception " + e);
+			if (DEBUG)
+				android.util.Log
+						.w(TAG, "ButterKnife doBind has exception " + e);
 		}
 	}
 
@@ -152,12 +166,14 @@ public class ButterKnife {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			android.util.Log.v("tt", "ButterKnife doOnClick has exception " + e);
+			if (DEBUG)
+				android.util.Log.w(TAG, "ButterKnife doOnClick has exception "
+						+ e);
 		}
 	}
 
 	public static <T extends View> T findById(Activity activity, int id) {
-		return (T)activity.findViewById(id);
+		return (T) activity.findViewById(id);
 	}
 
 	public static <T extends View> T findById(View view, int id) {
