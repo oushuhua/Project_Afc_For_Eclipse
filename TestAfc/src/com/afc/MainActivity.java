@@ -21,6 +21,7 @@ import com.afc.App.BasicFragmentActivity;
 import com.afc.App.PageFragment;
 import com.afc.module.mainactivity.HomepageFrgm;
 import com.afc.product.activity.ProductActivity;
+import com.afc.product.fragment.ProductListFrgm;
 import com.afc.registered.activity.SetUpPasswordActivity;
 import com.bumptech.glide.Glide;
 import com.idroid.tab.TabFrgmAdapter;

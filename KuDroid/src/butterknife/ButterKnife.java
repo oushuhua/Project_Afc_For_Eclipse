@@ -7,17 +7,18 @@ import java.lang.reflect.Proxy;
 
 import android.app.Activity;
 import android.view.View;
+
 /**
  * 用法和ButterKnife一样
  * 
  * @author houen.bao
- *
+ * 
  */
 public class ButterKnife {
 
 	private final static String TAG = "ButterKnife";
 
-	private static boolean DEBUG = false;
+	private static boolean DEBUG = true;
 
 	public static void setDebug(boolean isDebug) {
 		DEBUG = isDebug;
@@ -73,8 +74,11 @@ public class ButterKnife {
 			e.printStackTrace();
 			if (DEBUG) {
 				android.util.Log.w(TAG, "ButterKnife bind has exception " + e);
-				android.util.Log.w(TAG, "ButterKnife bind field: " + field);
-				android.util.Log.w(TAG, "ButterKnife bind method: " + method);
+				if (field != null)
+					android.util.Log.w(TAG, "ButterKnife bind field: " + field);
+				if (method != null)
+					android.util.Log.w(TAG, "ButterKnife bind method: "
+							+ method);
 			}
 		}
 	}
